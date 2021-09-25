@@ -1,0 +1,52 @@
+  :root{
+    --main-theme-color: #00BBFF;
+    --main-theme-color-two: #00BBFF;
+    --main-theme-bg: rgba(26, 60, 88, 0.09);
+    --main-theme-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.12),
+      0 1px 3px rgba(0, 0, 0, 0.24);
+    --primary-color: #00bbff;
+    --secondary-color: #eeeeee;
+  }
+  /* -----****page loader***----- */
+    .pageLoader{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 80000;
+    }
+    .spinner{
+      animation: rotation 1.35s linear infinite;
+    }
+    @keyframes rotation{
+      0%{
+        transform: rotate(0);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+    .circle{
+      stroke-dasharray: 180;
+      stroke-dashoffset: 0;
+      transform-origin: center;
+      animation: turn 1.35s ease-out infinite;
+    }
+    @keyframes turn{
+      0%{
+        stroke-dashoffset: 180;
+      }
+      50%{
+        stroke-dashoffset: 45;
+        transform: rotate(135deg)
+      }
+      100%{
+        stroke-dashoffset: 180;
+        transform: rotate(360deg);
+      }
+    }
+    svg{
+      stroke: var(--main-theme-color);
+    }
+  /* -----****page loader***----- */
