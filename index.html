@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>chatt app</title>
+  <!-----material icons------>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--link rel="stylesheet" href="icons/material icons/icon.css"-->
+  <!-- custom stylesheet-->
+  <link rel="stylesheet" href="css/page Loader.css" title="" type="" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="Images/FB_IMG_1616324288064.jpg" title="" type="" />
+</head>
+
+<body>
+  
+  <!-----loading Page------>
+   <div class="loadingP" id="loadingP">
+      <div id="cont">
+        <div id="lD">
+          <div class="loading"></div>
+          <div class="loading"></div>
+          <div class="loading"></div>
+          <div class="loading"></div>
+          <div class="loading"></div>
+        </div>
+      </div>
+    </div>
+  <!---x----loading Page---x-->
+  
+  
+  <!------login & register------>
+    <div class="d-hide" id="regLog">
+      <!-----login----->
+      <div class="login " id="login">
+        <div class="header">
+          <div>
+            <button class="RegButton">
+              Register 
+              <span class="material-icons">arrow_right</span>
+            </button>
+            <div class="loginLogo" id="lD">
+              <div class="loading"></div>
+              <div class="loading"></div>
+              <div class="loading"></div>
+              <div class="loading"></div>
+              <div class="loading"></div>
+            </div>
+          </div>
+        </div>
+        <form  class="lForm">
+          <div class="in-i">
+            <i class="material-icons i">mail_outline</i>
+            <input class="lInputUsername in-id" id="lInputUserEmail" type="email" placeholder="Email" name="email">
+          </div>
+          <div class="in-i">
+            <i class="material-icons i">lock_outline</i>
+            <input class="lInputPassword in-id" id="lInputPassword" type="password" placeholder="Password" name="password">
+            <i class="material-icons lInputPasswordType">remove_red_eye</i>
+          </div>
+          <button id="loginSub">login</button>
+        </form>
+        
+          <div class="others-hr"><hr><hr><hr></div><p>others</p>
+          <div class="others-hr"><hr><hr><hr></div>
+          <h5 class="googleAuthSignIn"> Google</h5>
+        
+      </div>
+      <!-----register----->
+      <div class="register" id="register">
+        <div class="header">
+          <div>
+            <button class="logButton">
+              <span class="material-icons">arrow_left</span>
+              Login
+            </button>
+            <div class="regLogo" id="lD">
+              <div class="loading"></div>
+              <div class="loading"></div>
+              <div class="loading"></div>
+              <div class="loading"></div>
+              <div class="loading"></div>
+            </div>
+          </div>
+        </div>
+        <form class="rForm" autocomplete="off">
+          <div class="in-i">
+            <i class="material-icons">person_outline</i>
+            <input style="text-align: left" class="rInputUsername in-id" id="rInputUsername" type="text" placeholder="Username" name="userName">
+          </div>
+          <div class="in-i">
+            <i class="material-icons i">mail_outline</i>
+            <input type="email" class="rInputUsername in-id" id="rInputUsername" placeholder="Email" name="email">
+          </div>
+          <div class="in-i">
+            <i class="material-icons i">lock_outline</i>
+            <input class="rInputPassword in-id" id="rInputPassword" type="password" placeholder="Password" name="password">
+            <i class="material-icons rInputPasswordType">remove_red_eye</i>
+          </div>
+          <button id="regSub">Register</button>
+        </form>
+      </div>
+    </div>
+  <!---x---login & register---x--->
+  
+  
+  
+  
+  
+  <!------home page------>
+    <div class="home-page d-hide" id="homePage">
+      <header class="homePageHeader" id="homePageHeader">
+        <div class="left">
+          <div class="profile" id="profile">
+            <img class="profileImg profileImgImg" src="Images/FB_IMG_1616324288064.jpg" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="home-search" id="search">
+            <i class="material-icons">search</i>
+            <input class="search d-hide" type="search" name="" id="" value="" />
+            <i class="material-icons mic d-hide">mic</i>
+          </div>
+        </div>
+      </header>
+      <!--x---header---x-->
+      
+      <!-----chatt user----->
+      <div class="activeChattUserDiv " id="activeChattUserDiv">
+        <ul class="userList layer0 d-hide">
+        </ul>
+        <ul class="userList layer1">
+        </ul>
+      </div>
+      
+      <!----homePageFooter---->
+      <footer class="footer" id="footer">
+        <div class="home-chatt Sfriend_list" id="home">
+          <i class="material-icons">people</i>
+        </div>
+        <div class="camera-effect">
+          <i class="material-icons">camera</i>
+        </div>
+        <div class="homePagCam homeChatList" id="camera">
+          <i class="material-icons">home</i>
+        </div>
+        <div class="home-notifications">
+          <i class="material-icons">notifications</i>
+        </div>
+        <div class="home-menu" id="camera">
+          <i class="material-icons">menu</i>
+        </div>
+      </footer>
+    </div>
+  <!---x---home page---x--->
+  
+  
+  
+  
+  
+  <!------login & register------>
+  <!------login & register------>
+  <!------login & register------>
+  <!------login & register------>
+  <!------login & register------>
+  <!------login & register------>
+  <!------login & register------>
+  <!------login & register------>
+  
+  
+  <!------page loading------>
+    <div class="pageLoader d-hide" id="pageLoader">
+      <svg id="svg" class="spinner" width="40px" height="40px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="circle" 
+          fill="none" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          cx="33" 
+          cy="33" 
+          r="30">
+        </circle>
+      </svg>
+    </div>
+  <!---x---page loading---x--->
+  
+  
+  <!------chatting card------>
+    <div class="chatting-card d-hide" id="chattingCard">
+      <div class="header">
+        <i class="material-icons chattingBack">keyboard_arrow_left</i>
+        <div class="user-details d-flex">
+          <img class="userChattImg2 userChattImg0" src="Images/FB_IMG_1616324288064.jpg" alt="">
+          <div class="details">
+            <h2 class="friendName0 name">shorif shuvo</h2>
+            <span class="time">2.50 AM</span>
+          </div>
+        </div>
+        <div class="contact">
+          <i class="material-icons">phone</i>
+          <i class="material-icons">camera</i>
+          <i class="material-icons">more_vert</i>
+        </div>
+      </div>
+      
+      <div class="chatt-box">
+      </div>
+      
+      <div class="footer">
+        <i class="material-icons">insert_emoticon</i>
+        <input class="msgInput" type="text" name="" placeholder="Type something"/>
+        <i class="material-icons">links</i>
+        <button class="msg"><i class="material-icons">mic</i></button>
+      </div>
+    </div>
+  <!---x---chatting card---x--->
+
+
+  <!-----setting & profile---->
+    <div class="setting-profile d-hide">
+      <div class="header">
+        <i class="material-icons back-button">keyboard_arrow_left</i>
+      </div>
+      
+      <div class="home">
+        <div class="profile"><img class="profileImgImg" src="Images/FB_IMG_1616324288064.jpg" alt=""></div>
+        <h2 class="profile-name profileName">l</h>
+        <div class="hr-main">
+          <div>
+            <hr class="hr">
+            <hr class="hr">
+            <hr class="hr">
+            <hr class="hr">
+          </div>
+           😍 
+          <div>
+            <hr class="hr">
+            <hr class="hr">
+            <hr class="hr">
+            <hr class="hr">
+          </div>
+        </div>
+        
+        <div class="about">
+          
+        </div>
+        
+        <div class="signOut">
+          <button id="signOut">signOut</button>
+        </div>
+      </div>
+    </div>
+  <!---x---setting & profile---x--->
+  
+  <!------firebase-------->
+  <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase.js" type="text/javascript" charset="utf-8"></script>
+  <script src="firebase/firebase-messaging.js" type="text/javascript" charset="utf-8"></script>
+  <script src="firebase/firebaseConfiguration.js" type="text/javascript" charset="utf-8"></script>
+  
+  <!------custom------->
+  <script src="Js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="Js/Testing.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/dark-mood.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/InputTransition.js" type="text/javascript" charset="utf-8"></script>
+  
+</body>
+</html>
